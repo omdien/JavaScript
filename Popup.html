@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, Prompt & Confirm</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Alert, Prompt dan Confirm
+        - alert digunakan untuk memberi peringatan berupa popup text di browser
+        - Prompt diugunakan untuk meminta input string dari pengguna browser dalam bentuk popup input text
+        - Confirm digunakan untuk meminta input boolean dari pengguna browser dalam bentuk popup input pilihan
+        */
+        //alert("Hello World");
+
+        //const nama = prompt("Siapa Nama Anda");
+        //alert(`Hello ${nama}`);
+
+        const masuk = confirm("Mau Masuk Aplikasi?");
+
+        if (masuk) {
+            const name = prompt("Nama Kamu Siapa?");
+            alert(`Hello ${name}`);
+        } else {
+            alert("Dadah!");
+        }
+    </script>
+</body>
+
+</html>

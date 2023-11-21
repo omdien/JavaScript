@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        /*
+        Operasi di Array
+        Operasi              Keterangan
+        array.push(value);   Menambah data ke Array
+        array.length         Untuk mendapatkan panjang array
+        array[index]         Mendapat data di posisi index
+        array[index]=value   Mengubah data pada posisi index
+        delete array[index]  Menghapus data di posisi index namun index tidak bergeser
+        */
+        let arrayKosong = [];
+        let arryNama = ["Didin","Handiman","Tjahridjan"];
+
+        arrayKosong.push("Didin Handiman");
+        arrayKosong.push("Yasin Arifin","Muklasin");
+        arrayKosong.push("Rudi Supriadi","Iromo");
+        arrayKosong.push("Mustikawati","Atik Lestantun");
+        
+        console.table(arrayKosong);
+        console.info(arrayKosong.length);
+        console.info(arrayKosong[2]);
+        arrayKosong[1]="Ganti data";
+        console.table(arrayKosong);
+        delete arrayKosong[1]; //nilai index tidak berubah
+        console.table(arrayKosong);
+        console.info(arrayKosong[1]);
+        arrayKosong.push("Sartini Sabir","Khaerun Naheru");
+        console.table(arrayKosong);
+        arrayKosong[1]="Danang Prakoso";
+        console.table(arrayKosong);
+        arrayKosong.push(1,2,3,4,5,6);
+        arrayKosong.push(["Didin Handiman","197502102009121001","Penata TK1 IId"]);
+        console.table(arrayKosong);
+        console.info(arrayKosong[15][2]);
+
+        /*
+        Perlu diingat
+        - tidak ada batasan harus data apa
+        - bisa memasukan data apapun kedalam array
+        - bahkan bisa memasukan aray kedalam array
+        */
+
+        /*
+        Assosiative Array atau hash 
+        - Tidak didukung di JavaScript
+        - jika dipaksa, maka JavaScript akan merubah type data array tersebut menjadi object
+        */
+    </script>
+</body>
+</html>

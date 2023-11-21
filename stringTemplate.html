@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+
+<body>
+    <script>
+        /*
+        String Template
+        - Sering menggunakan operator +
+        - opertor + sangat menyulitkan bila dalam jumlah banyak
+        - String template bisa mensubtitusi data dari luar String
+          ke dalam string
+        - untuk menggunakan String Template menggunakan ` (backtick) 
+        */
+        const nama = "Didin Handiman"
+        const value = 90;
+        const template = `Nama : ${nama} Lulus : ${value >= 75}`;
+
+        console.info(template);
+
+        /*
+        Multiline String cukup dengan menambahkan enter di dalam nya
+        */
+        let multiLineString = ` 
+        ini adalah multiline string
+        menggunakan string template
+        di JavaScript
+        `; //spasi juga berpengaruh di tata letak multiline string
+
+        console.info(multiLineString);
+
+        document.writeln("<pre>");
+        document.writeln(multiLineString);
+        document.writeln("</pre>");
+    </script>
+</body>
+
+</html>

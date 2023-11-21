@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String  & Number</title>
+</head>
+<body>
+    <script>
+        /*
+        Konversi String dan Number
+        - input dalam bentuk string
+        - ingin mengelola data dalam bentuk number
+        - sangat disarankan untuk konversi data
+
+        Melakukan Konversi String dan Number
+        Function            Keterangan 
+        parseInt(String)    Mengkonversi dari String ke Number
+                            (bilangan bulat)
+        parseFloat(String)  Mengkonversi dari String ke Number
+                            (bilangan pecahan)
+        Number(String)      Mengkonversi dari String ke Number
+        (bilangan bulat atau pecahan)
+        number.toString()   Mengkonversi dari Number ke String
+        */
+       // const value1 = "1"; //bentuk string
+       const value1 = parseInt("1") //akan jadi number bilangan bulat
+       const value2 = 1;
+       const sum = value1 + value2;
+
+       document.writeln(`<p>${sum}</p>`);
+
+       /*
+       NaN
+       - String yang dikonversi ke number bukan data yang valid
+       - Hasil konversi tersebut disebut NaN (Not a Number)
+       - Nan adalah number number spesial yang menyebutkan bahwan ini bukanlah number
+       - Jika Nan dioperasikan dengan data number lainnya, maka hasilny akan Nan lagi
+       */
+      document.writeln(`<p>${parseInt("salah")}<p>`);
+      //mentolelir tulisan yang dibelakang
+      document.writeln(`<p>${parseFloat("1.1salah")}<p>`); //akan ignore yang belakang (kecuali fungsi Number)
+      document.writeln(`<p>${Number("1salah")}<p>`);
+      document.writeln(`<p>${Number("1.1salah")}<p>`);
+
+      const value3 = Number("salah");
+      const value4 = 2;
+      const sumur = value3 + value4;
+
+      document.writeln(`<p>${sumur}</p>`);
+      
+      /*
+      inNaN() Function
+      - kadang ingin chek suatu number Nan atau bukan
+      - menggunkan fungsi isNan(number)
+      - hasilnya berupa data boolean
+      */
+     
+      document.writeln(`<p>${isNaN(sumur)}</p>`);
+      document.writeln(`<p>${isNaN(value4)}</p>`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type data object</title>
+</head>
+<body>
+    <script>
+        /*
+        Type data Object
+        - mirip dengan type data array
+        - index bisa menggunakan string
+        - index biasa disebut attributes atau properties
+        */
+        const orang = {
+            "nama lengkap" : "Didin Handiman",
+            NIP : "197502102009121001",
+            alamat : "Purwakarta",
+            umur : 48
+        };
+        //menambah atau mengubah
+        // orang["nama"]="Didin Handiman";
+        // orang["NIP"]="197502102009121001";
+        // orang["alamat"]="Purwakarta";
+        // orang["umur"]=30;
+        console.table(orang);
+
+        //menghapus data
+        delete orang["alamat"];
+
+        console.table(orang);
+        console.info(`Nama : ${orang["nama lengkap"]}`);
+        console.info(`NIP  : ${orang.NIP}`);
+        console.info(`Umur : ${orang.umur}`);
+    </script>
+</body>
+</html>
