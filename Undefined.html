@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undefined</title>
 </head>
+
 <body>
     <script>
+        /*
+        Undefined
+        - sebuah kata kunci di JavaScript
+        - sebuah type data
+        - sebuah variabel yang belum ditambahkan nilai, variabel tersebut merupakan type undefined
+        - untuk pemula aga sedikite membingungkan
+        - berbeda denga null
+        */
+        let datanya;
+
+        if (datanya === undefined) {
+            console.info("UNDEFINED");
+        } else {
+            console.info("DEFINED");
+        }
+
+        const name = ["Didin", "Handiman"];
+        delete name[0];
+
+        if (name[1] === undefined) {
+            console.info("UNDEFINED");
+        } else {
+            console.info("DEFINED");
+        }
         
+        const kosong = {};
+
+        //kosong["nama"] = "didin";
+        
+        if (kosong.nama === undefined) {
+            console.info("UNDEFINED");
+        } else {
+            console.info("DEFINED");
+        }
     </script>
 </body>
+
 </html>
