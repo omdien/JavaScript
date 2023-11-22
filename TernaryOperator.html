@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Ternary Operator
+        - operator sederhana dari if statement
+        - terdiri dari kondisi yang dievaluasi, jika menghasilkan true maka nilai pertama diambil, jika flase nilai kedua diambil
+        */
+        const nilai = 60;
+        let hasil;
+
+        if (nilai >= 75) {
+            hasil = "lulus";
+        } else {
+            hasil = "gagal";
+        }
+        document.writeln(`<p>${hasil}</p>`);
+
+        // const result = niloi >= 75 ? "Selamat Anda Lulus" : "Silahkan Coba Lagi";
+        document.writeln(`<p>${nilai >= 75 ? "Selamat Anda Lulus" : "Silahkan Coba Lagi"}</p>`);
+    </script>
+</body>
+
+</html>

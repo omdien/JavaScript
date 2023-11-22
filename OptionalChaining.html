@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Chaining</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Optional Chaining
+        - operator ? merupakan operator yang digunakan untuk mengamnakan ketika kita ingin mengakse property sebuah object dari data nullish
+        - jika kita coba mengakses property dari sebuah object dari data nullish  menggunakan optioan chaining operator, maka akan menjadi error
+        */
+        // let person = {};
+        let person = {
+            address: {
+                country: "Indonesia"
+            }
+        };
+        //document.writeln(`${person.address.country}`);
+        let say;
+        if (person.address !== undefined && person.address !== null) {
+            say = person.address.country;
+        }
+        document.writeln(`<p>${say}</p>`);
+
+        document.writeln(`<p>${person?.address?.country}</p>`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falsy dan Truthy</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Falsy
+        - adalah value yang ketika dalam konteks boolen, dia dianggap false
+        - merupakan salah satu fitur unik di JavaScript yang berguna namun kadang membingungkan
+        - kondisi tersebut tidak hanya bisa di boolean, tapi diluar boolean pun bisa namun kita harus tahu beberapa data falsy atau dianggap false
+
+        Data dianggap falsy Keterangan
+        false           Boolean false
+        0, -0           Dianggap false
+        "",'',``        Dianggap false                         
+        null            Dianggap false    
+        undefined       Dianggap false
+        NaN             Dianggap false
+        */
+        /*
+        Truthy kebalikan dari falsy
+        */
+        let data = "false";
+        // if (data) {
+        //     document.writeln(`<p>TRUE</p>`);
+        // } else {
+        //     document.writeln(`<p>FALSE</p>`);
+        // }
+        document.writeln(`<p>${data ? "TRUE" : "FALSE"}</p>`);
+
+        //menggambil truthy pertama
+        document.writeln(`<p>${"HELLO" || ''}</p>`); // HELLO
+        document.writeln(`<p>${"" || []}</p>`); //array kosong
+        document.writeln(`<p>${"0" || "NOL"}</p>`); //0
+        document.writeln(`<p>${0 || "NOL"}</p>`); //0
+        document.writeln(`<p>${null || "NULL"}</p>`); //0
+        document.writeln(`<p>${undefined || "UNDEFINED"}</p>`); //0
+        document.writeln(`<p>${undefined || null}</p></br>`); //0
+
+        const person = {
+            firstName: [],
+            lastName: "Handiman"
+        }
+        const name = person.firstName || person.lastName;
+        console.info(name);
+
+        // mengabil falsy pertama
+        document.writeln(`<p>${"HELLO" && ''}</p>`); // HELLO
+        document.writeln(`<p>${"" && []}</p>`); //array kosong
+        document.writeln(`<p>${"0" && "NOL"}</p>`); //0
+        document.writeln(`<p>${0 && "NOL"}</p>`); //0
+        document.writeln(`<p>${null && "NULL"}</p>`); //0
+        document.writeln(`<p>${undefined && "UNDEFINED"}</p>`); //0
+        document.writeln(`<p>${undefined && null}</p></br>`); //0
+    </script>
+</body>
+
+</html>
