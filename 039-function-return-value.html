@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Return Value</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Function Retrun Value
+        - secara default function tidak menghasilkan value apapun, jika diinginkan bisa membuat sebuah function yang mengembalikan value
+        - menggunakan kata kunci return di dalam function nya
+        - dalam blok function harus menggunakan kata kunci return diikuti dengan data yang ingin dihasilkan
+        - hanya bisa mengembalikan satu data, jika ingin mengembalikan lebih dari satu digunakan array untuk return valuenya
+        */
+        function sayHello(firstName, lastName) {
+            const say = `Hello ${firstName} ${lastName}`;
+            return say;
+        }
+
+        document.writeln(sayHello("Didin", "Handiman"));
+
+        function getFinalScore(value) {
+            if (value >= 90) {
+                return "A"
+            } else if (value >= 80) {
+                return "B"
+            } else if (value >= 70) {
+                return "C"
+            } else if (value >= 60) {
+                return "D"
+            } else {
+                return "E"
+            }
+        }
+
+        document.writeln(`<p>Nilai Anda ${getFinalScore(76)}</p>`);
+
+        /*
+        Menghentikan eksekusi dengan return
+        - saat return digunakan, maka kode setelah return tersebut tidak akan dieksekusi
+        - bisa menggukan return untuk menghentikan eksekusi sebuah function
+        */
+
+        function isContain(array, searchValue) {
+            for (const element of array) {
+                console.info(`iterasi element ${element}`);
+                if (element === searchValue) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        document.writeln(`<p>Huruf \'k\' ${isContain("makan", "k") ? "ada" : "tidak ada"} dalam \"makan\"</p>`);
+
+
+    </script>
+</body>
+
+</html>

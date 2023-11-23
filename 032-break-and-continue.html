@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and Continue</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Penggunaan Break
+        */
+
+        let conterBreak = 25;
+        while (true) {
+            document.writeln(`<p>Perulangan ke : ${conterBreak}</p>`);
+            conterBreak++;
+            if (conterBreak > 30) {
+                break;
+            }
+        }
+
+        /*
+        Penggunaan Continue (Ganjil Genap)
+        */
+
+        for (let conterContinue = 1; conterContinue <= 10; conterContinue++) {
+            if (conterContinue % 2 == 1)
+                document.writeln(`<p>Perulangan ke : ${conterContinue}</p>`);
+        }
+    </script>
+</body>
+
+</html>

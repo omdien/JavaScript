@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Parameter</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Default Parameter
+        - parameter itu optional, bisa diisi atau tidak
+        - parameter juga bisa diberi default value, maka secara otomatis parameter akan diisi default value
+        */
+        function register(name, gender = "UNKNOWN") {
+            console.log(name);
+            console.log(gender);
+        }
+
+        register("eko", "MALE");
+        register("eko");
+        register();
+        register("didin", undefined);
+        register("yasin", null);
+    </script>
+</body>
+
+</html>

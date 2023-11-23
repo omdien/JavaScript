@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Statement</title>
+</head>
+
+<body>
+    <script>
+        /*
+        With Statement
+        - merupakan fitur yang digunakan untuk menurunkan sebuah scope data
+        - bisa mengakses property dalam sebuah data tanpa harus menyebut datanya
+        - tidak direkomendasikan karena sebuah kode menjadi ambigu
+        */
+        const person = {
+            firstName: "Didin",
+            middleName: "Handiman",
+            lastName: "Tjahridjan",
+        }
+        // console.log(person.firstName);
+        // console.log(person.middleName);
+        // console.log(person.lastName);
+
+        const firstName = "Fitriani";
+        const lastName = "Azizah";
+
+        with (person) {
+            console.log(firstName); //untuk yang person
+            console.log(middleName);
+            console.log(lastName);
+        }
+    </script>
+</body>
+
+</html>
