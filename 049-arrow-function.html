@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Arrow Function
+            - arrow function adalah alternatif pembuatan function yang lebih sederhana dari function biasanya
+            - namun terdapat limitasi dan juga tidak bisa digunakan di semua situasi
+            - dinamakan arrow function karena menggunakan tanda => (seperti panah)
+            - berikut contoh kekurangan arrow function
+              - tidak memiliki fitur argument object
+              - tidak bisa menggukanan function generator
+              - tidak bisa mengakses this (yang nanti akan dibahas di function object)
+              - tidak bisa mengakses super (yang nanti akan dibahas di JavaScript OOP Programming)
+            */
+        const sayHello = (name) => {
+            const say = `Hello ${name}`;
+            console.info(say);
+        }
+
+        sayHello("Didin");
+
+        /*
+        Arrow function tanpa block
+        - jika sederhana, misalnya satu baris
+        - bisa menggunakan arrow function tanpa block
+        */
+
+        const sayHello2 = (name) => console.info(`Hello ${name}`);
+        sayHello("Handiman");
+
+        /*
+        Arrow function return value
+        - arrow function bisa mengembalikan value, sma sepertu function biasa
+        - jika menggunakan block maka perlu menggunakan kata kunci return
+        - jika tidak menggunakan block, kita tidak perlu menggunakan kata kunci return
+        */
+        const sum = (first, second) => first + second
+        console.info(sum(10, 10));
+
+        /*
+        arrow function tanpa kurung parameter
+        - jika parameter di arrow function hanya satu, kita bisa tidak menggunakan kurung pada parameter
+        */
+        const sayHello3 = name => console.info(`Hello ${name}`);
+        sayHello3("Faizal");
+
+        /*
+        Arrow function sebagai parameter
+        - karena arrow function sama seperti anonymous function
+        - jadi kita juga bisa menggunakan arrow function sebagai parameter di function lainnya
+        */
+        function giveMeName(callback) {
+            callback("Indrayani");
+        }
+        giveMeName((name) => console.info(`Hello ${name}`));
+    </script>
+</body>
+
+</html>

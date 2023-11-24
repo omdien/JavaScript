@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function dalam Function</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Function dalam Function
+            - tidak ada batasan dimana kita bisa membuat function
+            - termasuk jika kita ingin membuat function di dalam sebuah function, kita bisa melakukannya
+            - function yang ada di dalam disebut inner function
+            - inner function hanya bisa diakses di tempat kita membuat function nya, tidak bisa di akses diluar function nya
+            */
+        function outer() {
+            function inner() {
+                document.writeln(`<p>Hello</p>`);
+            }
+            inner();
+            inner();
+        }
+        outer();
+    </script>
+</body>
+
+</html>
