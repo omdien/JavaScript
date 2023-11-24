@@ -1,0 +1,65 @@
+
+Source Code : https://github.com/ProgrammerZamanNow...
+
+Materi Video :
+1  00:00:00 - Pendahuluan
+2  00:02:56 - Pengenalan JavaScript
+3  00:14:56 - Program Hello World
+4  00:24:56 - Komentar
+5  00:30:13 - Tipe Data Number
+6  00:36:34 - Tipe Data Boolean
+7  00:39:10 - Tipe Data String
+8  00:51:05 - Variable
+9  01:12:38 - Operator Matematika10
+10 01:26:00 - Operator Perbandingan
+11 01:31:39 - Operator Logika
+12 01:39:20 - Console
+13 01:46:56 - String Template
+14 01:58:36 - Konversi String dan Number
+15 02:13:30 - Tipe Data Array
+16 602:32:02 - Tipe Data Object
+17 02:43:50 - If Expression
+18 02:55:41 - Popup
+19 03:03:17 - Undefined
+20 03:11:19 - Null
+21 03:14:47 - Switch Expression
+22 03:20:44 - Operator typeof
+23 03:24:59 - Operator in
+24 03:31:23 - Ternary Operator
+25 03:36:17 - Nullish Coalescing Operator
+26 03:41:43 - Optional Chaining
+27 03:49:32 - Falsy dan Truthy
+28 03:56:54 - Operator Logika di Non Boolean
+29 04:06:20 - For Loop
+30 04:14:28 - While Loop
+31 04:16:35 - Do While Loop
+32 04:20:09 - Break dan Continue
+33 04:26:18 - Label
+34 04:32:38 - For In
+35 04:37:54 - For Of
+36 04:42:42 - With Statement
+37 04:49:29 - Function
+38 04:56:05 - Function Parameter
+39 05:01:13 - Function Return Value
+40 05:15:59 - Optional Parameter
+41 05:20:10 - Default Parameter
+42 05:24:56 - Rest Parameter
+43 05:38:12 - Function Sebagai Value
+44 05:44:44 - Anonymous Function
+45 05:51:35 - Function dalam Function
+46 05:54:50 - Scope
+47 06:06:36 - Recursive Function
+48 06:15:34 - Function GEnerator
+49 06:28:17 - Arrow Function
+50 06:40:56 - Closure
+51 06:47:49 - Object Method
+52 06:52:29 - Kata Kunci this
+53 06:59:27 - Arrow Function di Object
+54 07:04:10 - Getter dan Setter
+55 07:12:36 - Masalah Variable var
+56 07:18:57 - Destructuring
+57 07:39:30 - Strict Mode
+58 07:46:05 - Debugger
+59 07:59:59 - Materi Selanjutnya
+
+Donasi :
