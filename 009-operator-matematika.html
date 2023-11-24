@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Matematika</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Operator Matemetika
+            - Untuk type number
+            - Operator Aritmatika
+            - Operator Augmented Assignments
+            - Operator Unary
+            */
+
+        /*
+         Operator Aritmatika
+         +   Pertambahan
+          -   Pengurangan
+          *   Perkalian
+          **  Eksponensial
+          /   Pembagian
+          %   Sisa Bagi
+          */
+        document.writeln("<p><b>OPERATOR ARITMATIKA</b></p>")
+        let varAwal = 5;
+        let varTambah = 2;
+        let varKurang = 1;
+        let varKali = 4;
+        let varPangkat = 3;
+        let varBagi = 4;
+        let varMod = 7;
+
+
+        let hasil = varAwal + varTambah;
+        document.writeln("<p>" + varAwal + " + " + varTambah + " = " + hasil + "</p>");
+        let hasilAsli = hasil;
+
+        // hasil = hasil - varKurang;
+        hasil -= varKurang; //pengganti syntak yang atas biar lebih singkat, disebut juga operator Augmented Assigmnets
+        document.writeln("<p>" + hasilAsli + " - " + varKurang + " = " + hasil + "</p>");
+        hasilAsli = hasil;
+
+        // hasil = hasil * varKali;
+        hasil *= varKali //pengganti syntak yang atas biar lebih singkat, disebut juga operator Augmented Assigmnets
+        document.writeln("<p>" + hasilAsli + " * " + varKali + " = " + hasil + "</p>");
+        hasilAsli = hasil;
+
+        hasil = hasil ** varPangkat;
+        document.writeln("<p>" + hasilAsli + " pangkat " + varPangkat + " = " + hasil + "</p>");
+        hasilAsli = hasil;
+
+        hasil = hasil / varBagi;
+        document.writeln("<p>" + hasilAsli + " / " + varBagi + " = " + hasil + "</p>");
+        hasilAsli = hasil;
+
+        hasil = hasil % varMod;
+        document.writeln("<p>" + hasilAsli + " mod " + varMod + " = " + hasil + "</p>");
+        hasilAsli = hasil;
+
+        /*
+        Operator Unary
+        +   Menandakan nilai positif
+        -   Menandakan nilai negatif
+        ++  Increment, menaikan 1 angka
+        --  Decrement, menurunkan 1 angka
+        */
+        document.writeln("<p><b>OPERATOR UNARY</b></p>")
+
+        let hasilUnary = +1; // 1
+        document.writeln("<p>" + hasilUnary + "<p>")
+
+        hasilUnary++; // 2
+        document.writeln("<p>" + hasilUnary + "<p>")
+
+        hasilUnary--; // 1
+        document.writeln("<p>" + hasilUnary + "<p>")
+
+        hasilUnary = -hasilUnary; // -1
+        document.writeln("<p>" + hasilUnary + "<p>")
+
+    </script>
+</body>
+
+</html>

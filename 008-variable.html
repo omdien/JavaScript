@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+
+<body>
+    <script>
+        /*
+          Variabel
+          - Tempat untuk menyimpan data
+          - Bisa menggunakan lagi berulang-ulang
+          - menggukann kunci kata var diikuti dengan nama vaiabelnya
+          - Js adalah dynamic language, variabel tridak terpaku harus
+          menggunakan satu type data
+          - Untuk mengakses variabel, cukup menyebutkan nama varibelnya
+          */
+        document.writeln("<p><b>VARIBEL</b></p>")
+        var fullName; //biasakan pakai format Camel Case
+        fullName = "Fitriani Azizah";
+        var namaAnak = "Faizal Ridhwan" //langsung menambahkan value nya
+        let namaAnakLaki = "Faizal" //pengganti var bisa di ubah
+        const pi = 3.14 //varaibel tidak dapat di ubah isinya
+
+        document.writeln(fullName);
+        document.writeln("</br>");
+        document.writeln(fullName);
+        document.writeln("</br>");
+        document.writeln(namaAnak);
+        document.writeln("</br>");
+        document.writeln(fullName);
+        document.writeln("</br>");
+        document.writeln("</br>");
+
+        /*
+        - Sebelum 2015 menggunkanan var
+        - Setelah 2015 menggunakan let dan const
+        */
+        document.writeln(namaAnakLaki);
+        document.writeln("</br>");
+        document.writeln(pi);
+        // pi = 5; //ERROR tidak bisa di ubah karena constant
+        // document.writeln(pi); //tidak akan muncul
+        document.writeln("</br>");
+        document.writeln("</br>");
+    </script>
+</body>
+
+</html>

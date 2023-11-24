@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Perbandingan</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Operasi Perbandingan
+            - membandingkan dua buah data
+            - menghasilkan nilai bulean (true atau false) 
+            - jika benar hasilny true
+            - jika salah hasilnya false
+            - jenis operasi perbandingan
+            >   lebih dari
+            <   kurang dari
+            >=  lebih besar sama dengan
+            <=  lebih kecil sama dengan
+            ==  sama dengan
+            === sama dengan dan sama type (number dengan number atau string dengan string)
+            !=  tidak sama dengan
+            !== tidak sama dengan atau tidak sama type (number dengan number atau string dengan string)
+            */
+
+        document.writeln("<p><b>OPERATOR PERBANDINGAN</b></p>")
+        let hasilPerbandingan = 5 == "5";
+        document.writeln("<p>" + hasilPerbandingan + "<p>");
+
+        hasilPerbandingan = 5 === "5";
+        document.writeln("<p>" + hasilPerbandingan + "<p>");
+
+        hasilPerbandingan = 5 > 10;
+        document.writeln("<p>" + hasilPerbandingan + "<p>");
+
+        hasilPerbandingan = 5 < 10;
+        document.writeln("<p>" + hasilPerbandingan + "<p>")
+    </script>
+</body>
+
+</html>
