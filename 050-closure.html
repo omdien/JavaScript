@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Closure
+        - closere adalah kombinasi function dan bundel referensi ke data sekitarnya
+        - agak membingungkan untuk yang pertamakali belajar
+        - kita sudah mengetahui bahwa local scope tidak bisa diakses dari luar scope nya
+        - dengan kemampuan closure, kita dapat membuat sebuah function di local scope dan referensi ke data sekitar local scope tersebut, keluar scope
+        */
+        function createAdder(value) {
+            const owner = "Didin";
+            function add(param) {  //block function *
+                console.info(owner);
+                return value + param;
+            }
+            return add;
+        }
+
+        const addTwo = createAdder(2); //seolah-olah membuat block function *
+        console.info(addTwo(10));
+        console.info(addTwo(20));
+    </script>
+</body>
+
+</html>

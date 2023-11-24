@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata Kunci This</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Kata kunci this
+        - kata kunci this adalah referensi ke object milik siapa
+        - tiap lokasi kata kunci this bisa berbeda-beda referensi pemiliknya
+        - dalam object method this merupakan referensi ke object pemilik functionnya
+        - di global scope this merupakan referensi ke global object (di browser biasanya Window)
+        - dalam function this merupakan referensi ke global object (di browser biasanya Window)
+        - di function dengan strict mode (akan dibahas nanti) this adalah undefined
+        - dalam event, this merupakan referensi ke element yang menerima event 
+        */
+
+        // this di global scope
+        console.info(this); //Window
+
+        function sample() {
+            console.info(this);
+
+            function inner() {
+                console.info(this);
+            }
+
+            inner();
+        }
+
+        sample();
+
+        // this di object method
+        const person = {
+            name: "Didin Handiman",
+            sayHello: function (value) {
+                // this person
+                console.info(`Hi ${value}, my name is ${this.name}`);
+            }
+        }
+
+        person.sayHello("Muklasin");
+        person.sayHello("Joko");
+    </script>
+</body>
+
+</html>
