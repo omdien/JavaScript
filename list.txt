@@ -17,7 +17,7 @@ Materi Video :
 13 01:46:56 - String Template
 14 01:58:36 - Konversi String dan Number
 15 02:13:30 - Tipe Data Array
-16 602:32:02 - Tipe Data Object
+16 02:32:02 - Tipe Data Object
 17 02:43:50 - If Expression
 18 02:55:41 - Popup
 19 03:03:17 - Undefined
