@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desturcturing</title>
+</head>
+
+<body>
+    <Script>
+        /*
+        Destructuring
+        - adalah fitur yang bisa digunakan untuk membongkar value-value di array atau object kedalam varibel2 baru
+        - firut ini sangat mempermudah kita ketika ingin mengambil data dari array atau object tanpa harus melakukan pengambilan data satu persatu
+        */
+        const names = ["Didin", "Handiman", "Thahridjan"]
+        const firstName = names[0];
+        const secondtName = names[1];
+        const lastName = names[2];
+
+        console.info(firstName);
+        console.info(secondtName);
+        console.info(lastName);
+
+        const names2 = ["Yasin", "Didin", "Arisdianir", "Muklasin", "Imaduddin"];
+        const [pegawai1, pegawai2, pegawai3, ...others] = names2;
+
+        console.info(pegawai1);
+        console.info(pegawai2);
+        console.info(pegawai3);
+        console.info(others);
+
+        const prson = {
+            firstName2: "Didin",
+            lastNam2: "Handiman",
+            address: {
+                street: "Bojong",
+                city: "Purwakarta",
+                country: "Indonesia"
+            },
+            hobby: "Codding",
+            channel: "HW Channel"
+        }
+
+        //const firsName = person.firstName; //manual
+        //const lasName = person.lastName;
+
+        //destructuring
+        // const { firstName2, lastName2, address, ...ondhers } = prson;
+        const { firstName2, lastName2, address: { street, city, country }, ...ondhers } = prson;
+        console.info(firstName2);
+        console.info(lastName2);
+        //console.info(address);
+        console.info(street);
+        console.info(city);
+        console.info(country);
+        console.info(ondhers);
+
+        /*
+        Destructuring Function Parameter
+        - destructuring tidak hanya bisa dilakukan di variabel, tapi bisa juga dilakukan di function parameter
+        - hal ini membuat kita mudah ketika ingin mengambil nested data dalam array atau object dalam function
+        */
+
+        function displayPerson({ firstName3, middleName3, lastName3 }) {
+            console.info(firstName3);
+            console.info(middleName3);
+            console.info(lastName3);
+        }
+
+        const person3 = {
+            firstName3: "Faizal",
+            middleName3: "Ridhwan",
+            lastName3: "Handiman"
+        }
+
+        displayPerson(person3);
+
+        /*
+        Destruction di function parameter
+        */
+
+        function sum([first, second]) {
+            return first + second;
+        }
+
+        console.info(sum([10, 10]));
+        console.info(sum([20, 10]));
+
+        /*
+        Default Value
+        - yang paling menarik di destructuring adalah kita bisa menambahkan default value
+        - jadi misalnya kita melakukan destructuring terhadap array, ternyata tidak ada datanya, maka kita bisa menambahkan default value
+        - begitu juga pada object, jika ternyata property nya tidak ada, maka bisa menambahkan default value
+        */
+        const names4 = ["Fitriani", "Azizah"];
+        const [firstName4, middleName4, lastName4 = "Handiman"] = names4;
+
+        console.info(firstName4);
+        console.info(middleName4);
+        console.info(lastName4);
+
+        /*
+        Menggunakan nama varibel lain
+        - saat melakukan destruction di array, kita bisa dengan mudah membuat nama variabel sesuka kita
+        - namum pada saat melakukan desctruction kita harus membuat nama varibel sama dengan nama property
+        - kita bisa juga menggunakan nama varibel lain saat melakukan descructing object 
+        */
+        const person5 = {
+            firstName5: "Indrayani",
+            // middleName5: "Mustikasari",
+            lastName5: "Sudarmo"
+        }
+
+
+        const {
+            firstName5: namaDepan,
+            middleName5: namaTengah = "Kurniawan",
+            lastName5: namaBelakang } = person5;
+
+        console.info(namaDepan);
+        console.info(namaTengah);
+        console.info(namaBelakang);
+    </Script>
+</body>
+
+</html>
